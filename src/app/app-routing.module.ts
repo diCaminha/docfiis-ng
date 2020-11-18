@@ -8,7 +8,7 @@ import { DocumentosListComponent } from './components/documentos-list/documentos
 const routes: Routes = [
   { path: 'carteira/:userId', component: CarteiraComponent },
   { path: 'fiis/:code', component: DocumentosListComponent },
-  { path: '/buscar', component: BuscaFiisComponent },
+  { path: 'buscar', component: BuscaFiisComponent },
 
 ];
 

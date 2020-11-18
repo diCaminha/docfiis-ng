@@ -8,6 +8,7 @@ import { CarteiraComponent } from './components/carteira/carteira.component';
 import { DocumentosListComponent } from './components/documentos-list/documentos-list.component';
 import { AngularMaterialModule } from './material.module';
 import { BuscaFiisComponent } from './components/busca-fiis/busca-fiis.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BuscaFiisComponent } from './components/busca-fiis/busca-fiis.component
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

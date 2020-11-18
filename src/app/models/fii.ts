@@ -1,6 +1,6 @@
 export interface Fii {
     id: number;
-    code: number;
+    code: string;
     name: string;
     adm: string;
     manager: string;
