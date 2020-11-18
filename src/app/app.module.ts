@@ -9,13 +9,15 @@ import { DocumentosListComponent } from './components/documentos-list/documentos
 import { AngularMaterialModule } from './material.module';
 import { BuscaFiisComponent } from './components/busca-fiis/busca-fiis.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './components/header/hearder.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CarteiraComponent,
     DocumentosListComponent,
-    BuscaFiisComponent
+    BuscaFiisComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
