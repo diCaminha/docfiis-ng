@@ -1,12 +1,22 @@
 <mat-card>
   <mat-list>
     <div mat-subheader>Fiis</div>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label>Pesquisar por código do fundo...</mat-label>
+        <input matInput placeholder="Ex. MALL11" value="">
+        <button mat-button matSuffix mat-stroked-button aria-label="search">
+          <mat-icon>search</mat-icon>
+        </button>
+      </mat-form-field>
+    </form>
     <mat-list-item *ngFor="let fii of fiis">
       <mat-icon mat-list-icon>folder</mat-icon>
       <div mat-line>{{fii.code}}</div>
       <div mat-line> {{fii.name}} </div>
       <button class="example-button-row" mat-raised-button color="primary">Primary</button>
       <button class="example-button-row" mat-raised-button color="warn">Warn</button>
+      <mat-divider></mat-divider>
     </mat-list-item>
     <mat-divider></mat-divider>
   </mat-list>
