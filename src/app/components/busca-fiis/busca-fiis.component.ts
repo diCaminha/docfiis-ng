@@ -12,18 +12,11 @@ import { FiiService } from 'src/app/service/fii.service';
 })
 export class BuscaFiisComponent implements OnInit {
 
-  fiis: string[] = [];
-  constructor(private fiiService: FiiService) {
-
-  }
+  fiis: Fii[] = [];
+  constructor(private fiiService: FiiService) { }
 
   ngOnInit(): void {
-
-    this.fiiService.getFiis("any").subscribe(fiis => {
-      this.fiis = fiis.map(fii => fii.code);
-      console.log(this.fiis);
-    });
-
+    this.fiiService.getFiis("").subscribe(fiis => this.fiis = fiis);
   }
 
 }

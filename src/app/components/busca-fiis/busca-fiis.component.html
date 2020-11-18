@@ -1,5 +1,13 @@
-<mat-selection-list>
-    <mat-list-option style="background: black;" *ngFor="let fii of fiis">
-      {{fii}}
-    </mat-list-option>
-  </mat-selection-list>
+<mat-card>
+  <mat-list>
+    <div mat-subheader>Fiis</div>
+    <mat-list-item *ngFor="let fii of fiis">
+      <mat-icon mat-list-icon>folder</mat-icon>
+      <div mat-line>{{fii.code}}</div>
+      <div mat-line> {{fii.name}} </div>
+      <button class="example-button-row" mat-raised-button color="primary">Primary</button>
+      <button class="example-button-row" mat-raised-button color="warn">Warn</button>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-list>
+</mat-card>
