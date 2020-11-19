@@ -4,8 +4,8 @@
     <form class="example-form">
       <mat-form-field class="example-full-width">
         <mat-label>Pesquisar por código do fundo...</mat-label>
-        <input matInput placeholder="Ex. MALL11" value="">
-        <button mat-button matSuffix mat-stroked-button aria-label="search">
+        <input matInput placeholder="Ex. MALL11" [(NgModel)]="[inputCode]">
+        <button (click)="filtrarPorCodigo()" mat-button matSuffix mat-stroked-button aria-label="search">
           <mat-icon>search</mat-icon>
         </button>
       </mat-form-field>

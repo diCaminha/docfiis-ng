@@ -12,11 +12,16 @@ import { FiiService } from 'src/app/service/fii.service';
 })
 export class BuscaFiisComponent implements OnInit {
 
+  inputCodigo:string = "";
   fiis: Fii[] = [];
   constructor(private fiiService: FiiService) { }
 
   ngOnInit(): void {
     this.fiiService.getFiis("").subscribe(fiis => this.fiis = fiis);
+  }
+
+  filtrarPorCodigo() {
+    this.fiis = this.fiis.filter(fii => fii.code === this.inputCodigo.toUpperCase());
   }
 
 }
